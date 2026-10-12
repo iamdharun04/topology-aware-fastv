@@ -1,0 +1,59 @@
+[
+  {
+    "query": "Where is the red delivery truck in relation to the pedestrian crosswalk?",
+    "agent_decisions": {
+      "detected_intent": "SPATIAL_GROUNDING",
+      "attention_entropy": 0.919,
+      "selected_K_layer": 14,
+      "selected_prune_ratio": 0.35,
+      "selected_topology_alpha": 0.4
+    },
+    "comparative_results": {
+      "standard_fastv_scs": 0.7316,
+      "topology_aware_fastv_scs": 0.8373,
+      "spatial_coherence_improvement_factor": "1.14x Higher Coherence",
+      "flops_saved_percent": 19.69,
+      "latency_reduction_percent": 16.74,
+      "overhead_ms": 12.53
+    },
+    "scenario_name": "Real Image Scenario 1: Urban Intersection (Vehicles & Pedestrians)"
+  },
+  {
+    "query": "Locate the coffee mug on the wooden table next to the laptop.",
+    "agent_decisions": {
+      "detected_intent": "SPATIAL_GROUNDING",
+      "attention_entropy": 0.9161,
+      "selected_K_layer": 14,
+      "selected_prune_ratio": 0.35,
+      "selected_topology_alpha": 0.4
+    },
+    "comparative_results": {
+      "standard_fastv_scs": 0.6989,
+      "topology_aware_fastv_scs": 0.8116,
+      "spatial_coherence_improvement_factor": "1.16x Higher Coherence",
+      "flops_saved_percent": 19.69,
+      "latency_reduction_percent": 16.74,
+      "overhead_ms": 7.58
+    },
+    "scenario_name": "Real Image Scenario 2: Indoor Living Room (Object Localization)"
+  },
+  {
+    "query": "Read the main sign text on the bakery storefront.",
+    "agent_decisions": {
+      "detected_intent": "DETAILED_QA",
+      "attention_entropy": 0.9161,
+      "selected_K_layer": 12,
+      "selected_prune_ratio": 0.5,
+      "selected_topology_alpha": 0.55
+    },
+    "comparative_results": {
+      "standard_fastv_scs": 0.6212,
+      "topology_aware_fastv_scs": 0.7701,
+      "spatial_coherence_improvement_factor": "1.24x Higher Coherence",
+      "flops_saved_percent": 31.25,
+      "latency_reduction_percent": 26.56,
+      "overhead_ms": 7.6
+    },
+    "scenario_name": "Real Image Scenario 3: Storefront Billboard (OCR & Fine Text Reading)"
+  }
+]
